@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СборИдей</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header wrapper">
+        <a href="/">
+            <img class="header__logo" src="./assets/logo.svg" alt="logo.svg">
+        </a>
+
+        <div class="header__menu">
+            <a href="#" class="header__menu-item">Преимущества</a>
+            <a href="#" class="header__menu-item">Кейсы</a>
+            <a href="#" class="header__menu-item">Для клиента</a>
+            <a href="#" class="header__menu-item">Для респондента</a>
+        </div>
+
+        <div class="header__btns">
+            <button class="header__btns-btn">Войти</button>
+            <button class="header__btns-btn header__btns-btn--style">Создать демо-опрос</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="space wrapper">
+            <div class="space__left">
+                <div class="space__left-title">Пространство для </br> ваших <span class="space__left-title--span">исследований</span></div>
+
+                <p class="space__left-text">Популярный инструмент для исследования удовлетворенности пользователей, получения отзывов, маркетингового исследования и другие онлайн анкеты.</p>
+
+                <button class="space__left-btn">Получить консультацию</button>
+            </div>
+
+            <div class="space__right">
+                <div class="space__right-main">
+                    <img class="space__right-main-img" src="./assets/space-main.jpg" alt="space-main.jpg">
+                    
+                    <div class="space__right-main-btn--wrapper">
+                        <button class="space__right-main-btn">
+                            Посмотреть кейсы
+    
+                            <img src="./assets/btn-play.svg" alt="btn-play.svg">
+                        </button>
+
+                        <img class="space__right-main-corner space__right-main-corner--left" src="./assets/corner.svg" alt="corner.svg">
+                        <img class="space__right-main-corner space__right-main-corner--right" src="./assets/corner.svg" alt="corner.svg">
+                    </div>
+                </div>
+
+                <div class="space__right-small space__right-small--1">
+                    <div class="space__right-small-title">100+</div>
+                    <p class="space__right-small-text">компаний уже создали опросы</p>
+                </div>
+
+                <div class="space__right-small space__right-small--2">
+                    <div class="space__right-small-title">
+                        <img src="./assets/star.svg" alt="star.svg">
+                        <img src="./assets/star.svg" alt="star.svg">
+                        <img src="./assets/star.svg" alt="star.svg">
+                    </div>
+                    <p class="space__right-small-text">Персонализация. Запуск. Сопровождение. Анализ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="logos wrapper">
+            <img class="logos__img" src="./assets/logos/Logo-1.svg" alt="Logo-1.svg">
+            <img class="logos__img" src="./assets/logos/Logo-2.svg" alt="Logo-2.svg">
+            <img class="logos__img" src="./assets/logos/Logo-3.svg" alt="Logo-3.svg">
+            <img class="logos__img" src="./assets/logos/Logo-4.svg" alt="Logo-4.svg">
+            <img class="logos__img" src="./assets/logos/Logo-5.svg" alt="Logo-5.svg">
+        </section>
+
+        <section class="panel wrapper">
+            <div class="panel__block panel__block--1">
+                <h2 class="panel__block-title">Собственная <br/> онлайн панель</h2>
+                <p class="panel__block-text">Наша панель опросов — это объемная база данных тех респондентов, которые оставили обратную связь по вопросам качества продуктов и сервиса.</p>
+            </div>
+
+            <div class="panel__block panel__block--2">
+                <p class="panel__block-title">Покрытие всех <br/> регионов РФ</p>
+
+                <ul class="panel__block-list">
+                    <li class="panel__block-list-item">База 500+ тыс. зарегистрированных участников исследований</li>
+                    <li class="panel__block-list-item">Населенные пункты от 5 тыс. жителей</li>
+                    <li class="panel__block-list-item">Целевой добор узких сегментов аудитории современными инструментами таргетинга</li>
+                </ul>
+
+                <div class="panel__block-corner panel__block-corner--top">
+                    <img class="panel__block-corner-img panel__block-corner-img--left" src="./assets/corner--gray.svg" alt="corner.svg">
+                    <img class="panel__block-corner-img panel__block-corner-img--right" src="./assets/corner--gray.svg" alt="corner.svg">
+                </div>
+
+                <div class="panel__block-corner panel__block-corner--bottom">
+                    <img class="panel__block-corner-img panel__block-corner-img--left" src="./assets/corner--gray.svg" alt="corner.svg">
+                    <img class="panel__block-corner-img panel__block-corner-img--right" src="./assets/corner--gray.svg" alt="corner.svg">
+                </div>
+            </div>
+
+            <div class="panel__block panel__block--3">
+                <p class="panel__block-title">Глубокая сегментация профиля</p>
+
+                <ul class="panel__block-list">
+                    <li class="panel__block-list-item">64 дополнительных критерия позволяют не утяжелять Вашу анкету</li>
+                </ul>
+            </div>
+
+            <div class="panel__block panel__block--4"></div>
+        </section>
+
+        <section class="adaptability wrapper">
+            <img class="adaptability__img" src="./assets/adaptability.png" alt="adaptability.png">
+
+            <div class="adaptability__content">
+                <h2 class="adaptability__content-title">Адаптивность</h2>
+
+                <p class="adaptability__content-text">
+                    Сбор Идей – это возможность доступа с разных устройств и программного обеспечения.<br/><br/>
+                    
+                    Не волнуйтесь о типе устройства и ПО респондента, менеджера или редактора, так как наши анкеты, конструктор, результаты корректно отображаются на любом устройстве
+                </p>
+            </div>
+        </section>
+
+        <section class="functionality wrapper">
+            <h2 class="functionality__title">Функциональность</h2>
+            <p class="functionality__text">В конструкторе анкет “Сбор Идей” мы собрали самый востребованный функционал под Ваши потребности:</p>
+
+            <div class="functionality__items">
+                <div class="functionality__items-item">
+                    <p class="functionality__items-item-text">Свободный ответ с настройкой до 10 строк для внесения комментариев</p>
+                </div>
+
+                <div class="functionality__items-item">
+                    <p class="functionality__items-item-text">Настраиваемые шкалы (выбор визуальной подачи шкалы, возможность подписи меток шкалы каждой/выборочно)</p>
+                </div>
+
+                <div class="functionality__items-item">
+                    <p class="functionality__items-item-text">Выпадающий список вариантов ответа</p>
+                </div>
+
+                <div class="functionality__items-item">
+                    <p class="functionality__items-item-text">Предустановленный шаблон NPS с возможностью запросить комментарий респондента при выборе определенных показателей шкалы «от/до»</p>
+                </div>
+
+                <div class="functionality__items-item">
+                    <p class="functionality__items-item-text">Выбор одного или нескольких вариантов из списка</p>
+                </div>
+
+                <div class="functionality__items-item">
+                    <p class="functionality__items-item-text">Ранжирование вариантов ответов с помощью технологии Drag & Drop</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="learn wrapper">
+            <div class="learn__block">
+                <img class="learn__block-background" src="./assets/learn-block.png" alt="learn-block.png">
+
+                <div class="learn__block-img-container">
+                    <img class="learn__block-img" src="./assets/iphone.png" alt="iphone.png">
+                </div>
+
+                <div class="learn__block-content">
+                    <p class="learn__block-content-text">Ознакомиться с возможностями анкеты на любом Вашем устройстве</p>
+
+                    <button class="learn__block-content-btn">
+                        Узнать больше
+
+                        <img src="./assets/arrow.svg" alt="arrow.svg">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages wrapper">
+            <div class="advantages__block">
+                <div class="advantages__block-content">
+                    <h2 class="advantages__block-content-title">Мультимедийный формат</h2>
+
+                    <p class="advantages__block-content-text">Необходимо провести А/В-тест или вовлечь аудиторию с помощью интерактивного взаимодействия?</p><br/>
+                    
+                    <p class="advantages__block-content-text">В Сбор Идей вы можете загрузить любой контент вместо скучных текстовых формулировок</p>
+
+                    <ul class="advantages__block-content-list">
+                        <li class="advantages__block-content-list-item">изображения в формате PNG, JPEG, GIF и др.</li>
+                        <li class="advantages__block-content-list-item">видео в формате MPEG-4, MP4, AVI и др.</li>
+                        <li class="advantages__block-content-list-item">аудио в формате MP3</li>
+                    </ul>
+                </div>
+
+                <div class="advantages__block-image">
+                    <img class="advantages__block-image-img" src="./assets/advantages-block-1.jpg" alt="advantages-block-1.jpg">
+
+                    <div class="advantages__block-image-corner">
+                        <button class="advantages__block-image-corner-btn">
+                            Получить консультацию
+
+                            <img src="./assets/arrow-2.svg" alt="arrow-2.svg">
+                        </button>
+
+                        <img class="advantages__block-image-corner-img advantages__block-image-corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                        <img class="advantages__block-image-corner-img advantages__block-image-corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="advantages__block advantages__block--revert">
+                <div class="advantages__block-image">
+                    <img class="advantages__block-image-img" src="./assets/advantages-block-2.jpg" alt="advantages-block-2.jpg">
+
+                    <div class="advantages__block-image-corner">
+                        <button class="advantages__block-image-corner-btn">
+                            Получить консультацию
+
+                            <img src="./assets/arrow-2.svg" alt="arrow-2.svg">
+                        </button>
+
+                        <img class="advantages__block-image-corner-img advantages__block-image-corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                        <img class="advantages__block-image-corner-img advantages__block-image-corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                    </div>
+                </div>
+
+                <div class="advantages__block-content">
+                    <h2 class="advantages__block-content-title">Аналитика в режиме реального времени</h2>
+
+                    <p class="advantages__block-content-text">
+                        Наглядное отображение статистики ответов по всем типам вопросов – от шкал и мутивыбора до ранжирования и NPS.<br/>
+                        + Выгрузка результатов в Excel
+                    </p><br/>
+                    
+                    <p class="advantages__block-content-text">Net Promoter Score:</p>
+
+                    <ul class="advantages__block-content-list">
+                        <li class="advantages__block-content-list-item">группировка респондентов на критиков, нейтралов и промоутеров</li>
+                        <li class="advantages__block-content-list-item">количество ответов по каждой метке шкалы</li>
+                        <li class="advantages__block-content-list-item">просчет среднего индекса по классической формуле NPS</li>
+                        <li class="advantages__block-content-list-item">отображение комментариев к NPS вместе с оценкой</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="antifraud wrapper">
+            <h2 class="antifraud__title">Система антифрод</h2>
+
+            <div class="antifraud__items">
+                <div class="antifraud__items-item">
+                    <p class="antifraud__items-item-title">Учет времени</p>
+
+                    <p class="antifraud__items-item-text">
+                        Отбраковываются анкеты, на заполнение которых респондент затратил неоправданно мало времени.<br/><br/>
+
+                        Такие респонденты, так называемые спидстеры (англ. Speedsters), прокликивают анкету, не вчитываясь в вопросы и задания.<br/><br/>
+
+                        При реализации данной проверки важно помнить, что онлайн-анкета может допускать перерыв в заполнении.Респондент может вернуться к заполнению анкеты, например, на следующий день.
+                    </p>
+                </div>
+
+                <div class="antifraud__items-item">
+                    <p class="antifraud__items-item-title">Логические правила</p>
+
+                    <p class="antifraud__items-item-text">
+                        ПО позволяет избежать логических ошибок при заполнении анкеты. В программе доступно программирование анкеты на логику, переходы и сложные правила.<br/><br/>
+                        
+                        Таким образом, нивелируется влияние возможных ошибок, невнимательности или недобросовестности респондента (программа не позволит не ответить на какой-то вопрос, пропустить блок или ошибиться с переходами, прописанными в анкете).
+                    </p>
+                </div>
+
+                <div class="antifraud__items-item">
+                    <p class="antifraud__items-item-title">Вопросы-ловушки</p>
+
+                    <p class="antifraud__items-item-text">
+                        Используются для двух целей:<br/><br/>
+
+                        1) Для обеспечения добросовестности заполнения (например, в табличном вопросе в одной из строк просьба отметить определенный вариант ответа)<br/><br/>
+                        
+                        2) Для отбора целевой аудитории когда вопрос об использовании определенной категорией встраивается в ряд альтернатив и респондент не может соврать, чтобы получить вознаграждение за участие в опросе. Если в действительности он не является пользователем)
+                    </p>
+                </div>
+
+                <div class="antifraud__items-item">
+                    <p class="antifraud__items-item-title">Проверка профиля в социальных сетях</p>
+
+                    <p class="antifraud__items-item-text">
+                        При заполнении расширенного профиля респондент указывает свои профили в социальных сетях, по которым валидаторы проверяют правдивость данных
+                    </p>
+                </div>
+
+                <div class="antifraud__items-item">
+                    <p class="antifraud__items-item-title">Заполнение табличных вопросов</p>
+
+                    <p class="antifraud__items-item-text">
+                        Страйтлайнинг (straight lining) – это заполнение анкеты по определенному «маршруту», по одной вертикальной, горизонтальной линии или зигзагом. Респондент не вчитывается в вопрос или задание, прокликивает анкету, стараясь скорее перейти к следующему вопросу.<br/><br/>
+                        
+                        При проверке таблицы с такими ответами анализируются по смысловой нагрузке вопросов. Проведение проверки такого рода имеет смысл для оценочных таблиц с количеством ответов больше двух.
+                    </p>
+                </div>
+
+                <div class="antifraud__items-item antifraud__items-item--last">
+                    <p class="antifraud__items-item-title">Остались вопросы?</p>
+
+                    <p class="antifraud__items-item-text">Оставьте заявку и нащи менеджеры свяжутся с вами в ближайшее время</p>
+
+                    <button class="antifraud__items-item-btn">
+                        Получить консультацию
+
+                        <img src="./assets/arrow.svg" alt="arrow.svg">
+                    </button>
+
+                    <div class="antifraud__items-item-corner">
+                        <img class="antifraud__items-item-corner-img antifraud__items-item-corner-img--left" src="./assets/corner.svg" alt="corner.svg">
+                        <img class="antifraud__items-item-corner-img antifraud__items-item-corner-img--right" src="./assets/corner.svg" alt="corner.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages wrapper">
+            <div class="advantages__items">
+                <div class="advantages__items-item">
+                    <img class="advantages__items-item-img" src="./assets/advantages-1.svg" alt="advantages-1.svg">
+
+                    <p class="advantages__items-item-title">Понятный интерфейс</p>
+
+                    <p class="advantages__items-item-text">Наш конструктор не требует особых знаний и навыков программирования</p>
+                </div>
+
+                <div class="advantages__items-item">
+                    <img class="advantages__items-item-img" src="./assets/advantages-2.svg" alt="advantages-2.svg">
+
+                    <p class="advantages__items-item-title">Менеджерская поддержка</p>
+
+                    <p class="advantages__items-item-text">Бесплатное сопровождение менеджера (инструкции, презентация функционала, помощь, ответы на вопросы). Заведение опроса «Под ключ» силами нашего менеджера
+                    </p>
+                </div>
+
+                <div class="advantages__items-item">
+                    <img class="advantages__items-item-img" src="./assets/advantages-3.svg" alt="advantages-3.svg">
+
+                    <p class="advantages__items-item-title">Брендирование</p>
+
+                    <p class="advantages__items-item-text">Легко меняйте обложки, добавляйте фирменные изображения и элементы айдентики</p>
+                </div>
+
+                <div class="advantages__items-item">
+                    <img class="advantages__items-item-img" src="./assets/advantages-4.svg" alt="advantages-4.svg">
+
+                    <p class="advantages__items-item-title">Методологическая поддержка
+                    </p>
+
+                    <p class="advantages__items-item-text">Помощь методолога в составлении уникальной акеты под цели и задачи Вашего исследования</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cases wrapper">
+            <h2 class="cases__title">Кейсы</h2>
+
+            <div class="cases__block">
+                <div class="cases__block-menu">
+                    <div class="cases__block-menu-item cases__block-menu-item--active">Тестирование концепции премиальных кредитных карт</div>
+                    <div class="cases__block-menu-item">Тестирование концепции премиальных кредитных карт</div>
+                    <div class="cases__block-menu-item">Тестирование концепции премиальных кредитных карт</div>
+                    <div class="cases__block-menu-item">Тестирование концепции премиальных кредитных карт</div>
+                </div>
+
+                <div class="cases__block-content">
+                    <p class="cases__block-content-title">Тестирование концепции премиальных кредитных карт</p>
+
+                    <div class="cases__block-content-list">
+                        <div class="cases__block-content-list-item cases__block-content-list-item--metc"><span>Метод:</span> Онлайн-опрос (CAWI)</div>
+                        <div class="cases__block-content-list-item cases__block-content-list-item--geog"><span>География:</span> РФ, все федеральные округа</div>
+                        <div class="cases__block-content-list-item cases__block-content-list-item--audi"><span>Аудитория:</span> МВС, клиенты заказчика других банков</div>
+                        <div class="cases__block-content-list-item cases__block-content-list-item--sele"><span>Выборка:</span> Женщины от 22 до 54 лет и Мужчины от 22 до 59 лет (400 опросов)</div>
+                        <div class="cases__block-content-list-item cases__block-content-list-item--peri"><span>Период сбора данных:</span> Декабрь 2021</div>
+                        <div class="cases__block-content-list-item cases__block-content-list-item--purp"><span>Цели и задачи исследования:</span> Оценить восприятие концепции премиальных кредитных карт (1 действующая + 3 концепции нового продукта), определить драйверы выбора продуктов</div>
+                    </div>
+
+                    <img class="cases__block-content-img" src="./assets/cases.jpg" alt="cases.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="download wrapper">
+            <img class="download__img" src="./assets/download-pdf.svg" alt="download-pdf.svg">
+
+            <p class="download__text">Мы собрали для Вас самые распространенные версии отчетов</p>
+
+            <button class="download__btn">
+                Скачать
+
+                <img src="./assets/download-icon.svg" alt="download-icon.svg">
+            </button>
+        </section>
+
+        <section class="requirement wrapper">
+            <h2 class="requirement__title">Мы готовы реализовать любую потребность бизнеса</h2>
+
+            <div class="requirement__block">
+                <p class="requirement__block-title">Необходимость быстрого сбора мнений клиентов и потребителей Вашего продукта:</p>
+
+                <ul class="requirement__block-list">
+                    <li class="requirement__block-list-item">Для разработки стандартов</li>
+                    <li class="requirement__block-list-item">Для пересмотра концепции</li>
+                    <li class="requirement__block-list-item">Для разработки/изменения продуктов</li>
+                    <li class="requirement__block-list-item">Для тестирования рекламы, интерфейсов, аудио и визуального контента</li>
+                </ul>
+            </div>
+
+            <div class="requirement__block">
+                <p class="requirement__block-title">Регулярная оценка и отслеживание метрик:</p>
+
+                <ul class="requirement__block-list">
+                    <li class="requirement__block-list-item">Лояльности (NPS)</li>
+                    <li class="requirement__block-list-item">Удовлетворенности (CSI)</li>
+                    <li class="requirement__block-list-item">Усилий (CES)</li>
+                    <li class="requirement__block-list-item">Скорости обслуживания</li>
+                </ul>
+            </div>
+
+            <div class="requirement__block">
+                <p class="requirement__block-title">Построение/изменение HR процессов:</p>
+
+                <ul class="requirement__block-list">
+                    <li class="requirement__block-list-item">Анонимная оценка лояльности (eNPS), удовлетворенности и вовлеченности сотрудников</li>
+                    <li class="requirement__block-list-item">Опросы 360 градусов для оценки компетенций персонала</li>
+                    <li class="requirement__block-list-item">Сбор мнений и идей сотрудников при изменении внутренних процессов</li>
+                </ul>
+            </div>
+
+            <div class="requirement__block">
+                <p class="requirement__block-title">Проведение анализа конкурентов и оценка позиции компании в отрасли:</p>
+
+                <ul class="requirement__block-list">
+                    <li class="requirement__block-list-item">Сравнение атрибутов с помощью матричных вопросов</li>
+                    <li class="requirement__block-list-item">Поиск факторов выбора клиента</li>
+                    <li class="requirement__block-list-item">Ранжирование важности атрибутов</li>
+                </ul>
+            </div>
+            
+            <div class="requirement__block">
+                <p class="requirement__block-title">Работа с обратной связью клиентов (в любом удобном канале):</p>
+
+                <ul class="requirement__block-list">
+                    <li class="requirement__block-list-item">Интеграция с Вашими каналами коммуникаций, социальными сетями и медиа</li>
+                    <li class="requirement__block-list-item">Рассылка в мессенджерах (Viber, WhatsApp, Telegram)</li>
+                    <li class="requirement__block-list-item">Передача индивидуальных ссылок респондентов для самостоятельного взаимодействия Заказчика с аудиторией</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="standards wrapper">
+            <h2 class="standards__title">Наши стандарты качества</h2>
+
+            <div class="standards__items">
+                <div class="standards__items-item">
+                    <div class="standards__items-item-counter">01</div>
+
+                    <div class="standards__items-item-content">
+                        <p class="standards__items-item-content-title">Запуск проекта</p>
+
+                        <p class="standards__items-item-content-text">
+                            Брифинг, разработка методик, программирование, тестирование анкеты.<br/><br/>
+
+                            Выбор респондентов по профилю на базе глубокой сегментации профайлов и по дополнительному скринингу
+                        </p>
+                    </div>
+                </div>
+
+                <div class="standards__items-item">
+                    <div class="standards__items-item-counter">02</div>
+
+                    <div class="standards__items-item-content">
+                        <p class="standards__items-item-content-title">Идентификация респондентов</p>
+
+                        <p class="standards__items-item-content-text">
+                            Полная история сотрудничества<br/><br/>
+
+                            Подтверждение профиля по e-mail, контроль уникальности мобильных телефонов и реквизитов для оплаты<br/><br/>
+
+                            Запрет на прохождение опросов с одного устройства через отслеживание IP-адресов.<br/><br/>
+
+                            Ограничение частоты участия по тематике, по профессии
+                        </p>
+                    </div>
+                </div>
+
+                <div class="standards__items-item">
+                    <div class="standards__items-item-counter">03</div>
+
+                    <div class="standards__items-item-content">
+                        <p class="standards__items-item-content-title">Чистота анкет</p>
+
+                        <p class="standards__items-item-content-text">
+                            Контроль закрытия квотных ячеек<br/><br/>
+
+                            Контроль времени заполнения<br/><br/>
+
+                            Отсев по скринингу<br/><br/>
+
+                            Блокировка «не знаю/затрудняюсь ответить»<br/><br/>
+
+                            Анализ ответов на открытые вопросы<br/><br/>
+
+                            Скрытые вопросы
+                        </p>
+                    </div>
+                </div>
+
+                <div class="standards__items-item">
+                    <div class="standards__items-item-counter">04</div>
+
+                    <div class="standards__items-item-content">
+                        <p class="standards__items-item-content-title">Реализация проекта</p>
+
+                        <p class="standards__items-item-content-text">
+                            Проектная команда 24/7<br/><br/>
+
+                            Регулярные статусы в ходе проекта<br/><br/>
+
+                            Разработка темплейтов отчетности<br/><br/>
+
+                            Презентация итогов исследования<br/><br/>
+
+                            Выводы и рекомендации
+                        </p>
+                    </div>
+                </div>
+
+                <div class="standards__items-item">
+                    <div class="standards__items-item-counter">05</div>
+
+                    <div class="standards__items-item-content">
+                        <p class="standards__items-item-content-title">Отчеты</p>
+
+                        <p class="standards__items-item-content-text">
+                            Обработка массивов в Excel и SPSS.<br/><br/>
+
+                            Аналитика in-house:<br/><br/>
+
+                            Стандартные статистические отчетыи кросс-таблицы<br/><br/>
+
+                            Профессиональный аналитический отчет с гипотезами и рекомендациями
+                        </p>
+                    </div>
+                </div>
+
+                <div class="standards__items-item">
+                    <div class="standards__items-item-counter">06</div>
+
+                    <div class="standards__items-item-content">
+                        <p class="standards__items-item-content-title">Подведение итогов исследования</p>
+
+                        <p class="standards__items-item-content-text">
+                            Оценка достижения целей<br/><br/>
+
+                            Обратная связь<br/><br/>
+
+                            Подготовка к запуску следующей волны
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flexibility wrapper">
+            <img class="flexibility__img" src="./assets/flexibility-phone.png" alt="flexibility-phone.png">
+
+            <div class="flexibility__content">
+                <h2 class="flexibility__content-title">Гибкость и персонализация</h2>
+
+                <p class="flexibility__content-text">Разработка уникального функционала силами собственной команды разработчиков:</p>
+
+                <ul class="flexibility__content-list">
+                    <li class="flexibility__content-list-item">возможность интеграции с системами Заказчика</li>
+                    <li class="flexibility__content-list-item">персонализированная логика анкеты и пути респондента</li>
+                    <li class="flexibility__content-list-item">создание механизмов анкеты под запрос клиента (MaxDiff , Click-test (зональные, координатные) и др.</li>
+                    <li class="flexibility__content-list-item">квотирование ЦА опроса</li>
+                </ul>
+            </div>
+
+            <div class="flexibility__corner">
+                <button class="flexibility__corner-btn">
+                    Попробовать демо
+
+                    <img src="./assets/arrow.svg" alt="arrow.svg">
+                </button>
+
+                <img class="flexibility__corner-img flexibility__corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                <img class="flexibility__corner-img flexibility__corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+            </div>
+        </section>
+
+        <!-- <section class="consultation wrapper">
+            <h2>Консультация</h2>
+
+            <p>Оставьте контактные данные и мы свяжемся с вами в ближайшее время, чтобы ответить на все вопросы.</p>
+
+            <div>
+
+            </div>
+        </section> -->
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container wrapper">
+            <img class="footer__logo" src="./assets/logo-white.svg" alt="logo-white.svg">
+
+            <div class="footer__menu">
+                <a class="footer__menu-link" href="#">Преимущества</a>
+                <a class="footer__menu-link" href="#">Кейсы</a>
+                <a class="footer__menu-link" href="#">Для клиента</a>
+                <a class="footer__menu-link" href="#">Для респондента</a>
+                <a class="footer__menu-link" href="mailto:info@servizoria.ru">info@servizoria.ru</a>
+                <a class="footer__menu-link" href="mailto:sales@servizoria.ru">sales@servizoria.ru</a>
+            </div>
+
+            <a class="footer__tell" href="tel:+74952680244">
+                <img src="./assets/phone.svg" alt="phone.svg">
+                +7 (495) 268-02-44
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
