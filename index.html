@@ -27,7 +27,38 @@
             <button class="header__btns-btn">Войти</button>
             <button class="header__btns-btn header__btns-btn--style">Создать демо-опрос</button>
         </div>
+
+        <div class="header__open" onclick="changeHeaderShow()"><img src="./assets/menu.svg" alt="menu.svg"></div>
+
+        <div class="header--mobile">
+            <div class="header__close" onclick="changeHeaderShow()"><img src="./assets/close.svg" alt="close.svg"></div>
+
+            <div class="header__menu">
+                <a href="#" class="header__menu-item">Преимущества</a>
+                <a href="#" class="header__menu-item">Кейсы</a>
+                <a href="#" class="header__menu-item">Для клиента</a>
+                <a href="#" class="header__menu-item">Для респондента</a>
+            </div>
+    
+            <div class="header__btns">
+                <button class="header__btns-btn">Войти</button>
+                <button class="header__btns-btn header__btns-btn--style">Создать демо-опрос</button>
+            </div>
+        </div>
     </header>
+
+    <script>
+        function changeHeaderShow() {
+            let classEl = document.querySelector('.header--mobile').classList
+            console.log('lox');
+
+            if(document.querySelector('.header--mobile-show')) {
+                classEl.remove('header--mobile-show')
+            } else {
+                classEl.add('header--mobile-show')
+            }
+        }
+    </script>
 
     <main>
         <section class="space wrapper">
@@ -72,11 +103,20 @@
         </section>
 
         <section class="logos wrapper">
-            <img class="logos__img" src="./assets/logos/Logo-1.svg" alt="Logo-1.svg">
-            <img class="logos__img" src="./assets/logos/Logo-2.svg" alt="Logo-2.svg">
-            <img class="logos__img" src="./assets/logos/Logo-3.svg" alt="Logo-3.svg">
-            <img class="logos__img" src="./assets/logos/Logo-4.svg" alt="Logo-4.svg">
-            <img class="logos__img" src="./assets/logos/Logo-5.svg" alt="Logo-5.svg">
+            <div
+                id="logos" 
+                class="DTScroll logos-slider logos-slider--0"
+                points='{"0":5, "768": 2.5}' 
+                direction="horizontal" 
+            >
+                <div class="logos-line">
+                    <div class="logos-item"><img class="logos__img" src="./assets/logos/Logo-1.svg" alt="Logo-1.svg"></div>
+                    <div class="logos-item"><img class="logos__img" src="./assets/logos/Logo-2.svg" alt="Logo-2.svg"></div>
+                    <div class="logos-item"><img class="logos__img" src="./assets/logos/Logo-3.svg" alt="Logo-3.svg"></div>
+                    <div class="logos-item"><img class="logos__img" src="./assets/logos/Logo-4.svg" alt="Logo-4.svg"></div>
+                    <div class="logos-item"><img class="logos__img" src="./assets/logos/Logo-5.svg" alt="Logo-5.svg"></div>
+                </div>
+            </div>
         </section>
 
         <section class="panel wrapper">
@@ -600,15 +640,34 @@
             </div>
         </section>
 
-        <!-- <section class="consultation wrapper">
-            <h2>Консультация</h2>
+        <section class="consultation wrapper">
+            <h2 class="consultation__title">Консультация</h2>
 
-            <p>Оставьте контактные данные и мы свяжемся с вами в ближайшее время, чтобы ответить на все вопросы.</p>
+            <p class="consultation__text">Оставьте контактные данные и мы свяжемся с вами в ближайшее время, чтобы ответить на все вопросы.</p>
 
-            <div>
+            <form class="consultation__inputs">
+                <div class="consultation__inputs-field consultation__inputs-field-floating">
+                    <input class="consultation__inputs-field__input" type="text" id="name" placeholder="name" required>
+                    <label class="consultation__inputs-field__label" for="name">ФИО*</label>
+                </div>
 
-            </div>
-        </section> -->
+                <div class="consultation__inputs-field consultation__inputs-field-floating">
+                    <input class="consultation__inputs-field__input" type="text" id="tell" placeholder="tell" required>
+                    <label class="consultation__inputs-field__label" for="tell">Телефон*</label>
+                </div>
+
+                <div class="consultation__inputs-field consultation__inputs-field-floating">
+                    <input class="consultation__inputs-field__input" type="email" id="email" placeholder="email">
+                    <label class="consultation__inputs-field__label" for="email">Email</label>
+                </div>
+
+                <button class="consultation__inputs-btn">Связаться с нами</button>
+            </form>
+
+            <label class="consultation__check">
+                <input class="consultation__check-input" type="checkbox"> Используя сайт, Вы соглашаетесь с условиями сайта и на обработку <a href="#">персональных данных</a>.
+            </label>
+        </section>
     </main>
 
     <footer class="footer">
@@ -630,5 +689,7 @@
             </a>
         </div>
     </footer>
+
+    <script src="./DTScroll.min.js"></script>
 </body>
 </html>
