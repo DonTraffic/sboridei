@@ -25,7 +25,7 @@
 
         <div class="header__btns">
             <button class="header__btns-btn">Войти</button>
-            <button class="header__btns-btn header__btns-btn--style">Создать демо-опрос</button>
+            <button class="header__btns-btn header__btns-btn--style btn-purple">Создать демо-опрос</button>
         </div>
 
         <div class="header__open" onclick="changeHeaderShow()"><img src="./assets/menu.svg" alt="menu.svg"></div>
@@ -42,7 +42,7 @@
     
             <div class="header__btns">
                 <button class="header__btns-btn">Войти</button>
-                <button class="header__btns-btn header__btns-btn--style">Создать демо-опрос</button>
+                <button class="header__btns-btn header__btns-btn--style btn-purple">Создать демо-опрос</button>
             </div>
         </div>
     </header>
@@ -67,7 +67,7 @@
 
                 <p class="space__left-text">Популярный инструмент для исследования удовлетворенности пользователей, получения отзывов, маркетингового исследования и другие онлайн анкеты.</p>
 
-                <button class="space__left-btn">Получить консультацию</button>
+                <button class="space__left-btn btn-purple">Получить консультацию</button>
             </div>
 
             <div class="space__right">
@@ -75,7 +75,7 @@
                     <img class="space__right-main-img" src="./assets/space-main.jpg" alt="space-main.jpg">
                     
                     <div class="space__right-main-btn--wrapper">
-                        <button class="space__right-main-btn">
+                        <button class="space__right-main-btn btn-purple">
                             Посмотреть кейсы
     
                             <img src="./assets/btn-play.svg" alt="btn-play.svg">
@@ -241,7 +241,7 @@
                     <img class="advantages__block-image-img" src="./assets/advantages-block-1.jpg" alt="advantages-block-1.jpg">
 
                     <div class="advantages__block-image-corner">
-                        <button class="advantages__block-image-corner-btn">
+                        <button class="advantages__block-image-corner-btn btn-purple">
                             Получить консультацию
 
                             <img src="./assets/arrow-2.svg" alt="arrow-2.svg">
@@ -258,7 +258,7 @@
                     <img class="advantages__block-image-img" src="./assets/advantages-block-2.jpg" alt="advantages-block-2.jpg">
 
                     <div class="advantages__block-image-corner">
-                        <button class="advantages__block-image-corner-btn">
+                        <button class="advantages__block-image-corner-btn btn-purple">
                             Получить консультацию
 
                             <img src="./assets/arrow-2.svg" alt="arrow-2.svg">
@@ -407,35 +407,102 @@
 
             <div class="cases__block">
                 <div class="cases__block-menu">
-                    <div class="cases__block-menu-item cases__block-menu-item--active">Тестирование концепции премиальных кредитных карт</div>
-                    <div class="cases__block-menu-item">Тестирование концепции премиальных кредитных карт</div>
-                    <div class="cases__block-menu-item">Тестирование концепции премиальных кредитных карт</div>
-                    <div class="cases__block-menu-item">Тестирование концепции премиальных кредитных карт</div>
+                    <div class="cases__block-menu-item cases__block-menu-item--active" onclick="clickCasesMenu(0)">Тестирование концепции премиальных кредитных карт</div>
+                    <div class="cases__block-menu-item" onclick="clickCasesMenu(1)">Тестирование концепции премиальных кредитных карт</div>
+                    <div class="cases__block-menu-item" onclick="clickCasesMenu(2)">Тестирование концепции премиальных кредитных карт</div>
+                    <div class="cases__block-menu-item" onclick="clickCasesMenu(3)">Тестирование концепции премиальных кредитных карт</div>
                 </div>
 
-                <div class="cases__block-content">
-                    <p class="cases__block-content-title">Тестирование концепции премиальных кредитных карт</p>
-
-                    <div class="cases__block-content-list">
-                        <div class="cases__block-content-list-item cases__block-content-list-item--metc"><span>Метод:</span> Онлайн-опрос (CAWI)</div>
-                        <div class="cases__block-content-list-item cases__block-content-list-item--geog"><span>География:</span> РФ, все федеральные округа</div>
-                        <div class="cases__block-content-list-item cases__block-content-list-item--audi"><span>Аудитория:</span> МВС, клиенты заказчика других банков</div>
-                        <div class="cases__block-content-list-item cases__block-content-list-item--sele"><span>Выборка:</span> Женщины от 22 до 54 лет и Мужчины от 22 до 59 лет (400 опросов)</div>
-                        <div class="cases__block-content-list-item cases__block-content-list-item--peri"><span>Период сбора данных:</span> Декабрь 2021</div>
-                        <div class="cases__block-content-list-item cases__block-content-list-item--purp"><span>Цели и задачи исследования:</span> Оценить восприятие концепции премиальных кредитных карт (1 действующая + 3 концепции нового продукта), определить драйверы выбора продуктов</div>
+                <div 
+                    id="cases" 
+                    class="DTScroll cases-slider cases-slider--0"
+                    points='{"0":1}'
+                    direction="horizontal"
+                    anchor="true"
+                >
+                    <div class="cases-line">
+                        <div class="cases__block-content cases-item cases__block-content--active">
+                            <p class="cases__block-content-title">Тестирование концепции премиальных кредитных карт</p>
+        
+                            <div class="cases__block-content-list">
+                                <div class="cases__block-content-list-item cases__block-content-list-item--metc"><span>Метод:</span> Онлайн-опрос (CAWI)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--geog"><span>География:</span> РФ, все федеральные округа</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--audi"><span>Аудитория:</span> МВС, клиенты заказчика других банков</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--sele"><span>Выборка:</span> Женщины от 22 до 54 лет и Мужчины от 22 до 59 лет (400 опросов)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--peri"><span>Период сбора данных:</span> Декабрь 2021</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--purp"><span>Цели и задачи исследования:</span> Оценить восприятие концепции премиальных кредитных карт (1 действующая + 3 концепции нового продукта), определить драйверы выбора продуктов</div>
+                            </div>
+        
+                            <img class="cases__block-content-img" src="./assets/cases.jpg" alt="cases.jpg">
+                        </div>
+        
+                        <div class="cases__block-content cases-item">
+                            <p class="cases__block-content-title">Тестирование концепции премиальных кредитных карт 2</p>
+        
+                            <div class="cases__block-content-list">
+                                <div class="cases__block-content-list-item cases__block-content-list-item--metc"><span>Метод:</span> Онлайн-опрос (CAWI)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--geog"><span>География:</span> РФ, все федеральные округа</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--audi"><span>Аудитория:</span> МВС, клиенты заказчика других банков</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--sele"><span>Выборка:</span> Женщины от 22 до 54 лет и Мужчины от 22 до 59 лет (400 опросов)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--peri"><span>Период сбора данных:</span> Декабрь 2021</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--purp"><span>Цели и задачи исследования:</span> Оценить восприятие концепции премиальных кредитных карт (1 действующая + 3 концепции нового продукта), определить драйверы выбора продуктов</div>
+                            </div>
+        
+                            <img class="cases__block-content-img" src="./assets/cases.jpg" alt="cases.jpg">
+                        </div>
+        
+                        <div class="cases__block-content cases-item">
+                            <p class="cases__block-content-title">Тестирование концепции премиальных кредитных карт 3</p>
+        
+                            <div class="cases__block-content-list">
+                                <div class="cases__block-content-list-item cases__block-content-list-item--metc"><span>Метод:</span> Онлайн-опрос (CAWI)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--geog"><span>География:</span> РФ, все федеральные округа</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--audi"><span>Аудитория:</span> МВС, клиенты заказчика других банков</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--sele"><span>Выборка:</span> Женщины от 22 до 54 лет и Мужчины от 22 до 59 лет (400 опросов)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--peri"><span>Период сбора данных:</span> Декабрь 2021</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--purp"><span>Цели и задачи исследования:</span> Оценить восприятие концепции премиальных кредитных карт (1 действующая + 3 концепции нового продукта), определить драйверы выбора продуктов</div>
+                            </div>
+        
+                            <img class="cases__block-content-img" src="./assets/cases.jpg" alt="cases.jpg">
+                        </div>
+        
+                        <div class="cases__block-content cases-item">
+                            <p class="cases__block-content-title">Тестирование концепции премиальных кредитных карт 4</p>
+        
+                            <div class="cases__block-content-list">
+                                <div class="cases__block-content-list-item cases__block-content-list-item--metc"><span>Метод:</span> Онлайн-опрос (CAWI)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--geog"><span>География:</span> РФ, все федеральные округа</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--audi"><span>Аудитория:</span> МВС, клиенты заказчика других банков</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--sele"><span>Выборка:</span> Женщины от 22 до 54 лет и Мужчины от 22 до 59 лет (400 опросов)</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--peri"><span>Период сбора данных:</span> Декабрь 2021</div>
+                                <div class="cases__block-content-list-item cases__block-content-list-item--purp"><span>Цели и задачи исследования:</span> Оценить восприятие концепции премиальных кредитных карт (1 действующая + 3 концепции нового продукта), определить драйверы выбора продуктов</div>
+                            </div>
+        
+                            <img class="cases__block-content-img" src="./assets/cases.jpg" alt="cases.jpg">
+                        </div>
                     </div>
-
-                    <img class="cases__block-content-img" src="./assets/cases.jpg" alt="cases.jpg">
                 </div>
             </div>
         </section>
+
+        <script>
+            document.querySelector('.cases-slider').setAttribute('disable', `${window.innerWidth > 768 ? 'true' : 'false'}`)
+
+            function clickCasesMenu(count) {
+                document.querySelector('.cases__block-menu-item--active').classList.remove('cases__block-menu-item--active')
+                document.querySelectorAll('.cases__block-menu-item')[count].classList.add('cases__block-menu-item--active')
+
+                document.querySelector('.cases__block-content--active').classList.remove('cases__block-content--active')
+                document.querySelectorAll('.cases__block-content')[count].classList.add('cases__block-content--active')
+            }
+        </script>
 
         <section class="download wrapper">
             <img class="download__img" src="./assets/download-pdf.svg" alt="download-pdf.svg">
 
             <p class="download__text">Мы собрали для Вас самые распространенные версии отчетов</p>
 
-            <button class="download__btn">
+            <button class="download__btn btn-purple">
                 Скачать
 
                 <img src="./assets/download-icon.svg" alt="download-icon.svg">
@@ -629,7 +696,7 @@
             </div>
 
             <div class="flexibility__corner">
-                <button class="flexibility__corner-btn">
+                <button class="flexibility__corner-btn btn-purple">
                     Попробовать демо
 
                     <img src="./assets/arrow.svg" alt="arrow.svg">
@@ -661,7 +728,7 @@
                     <label class="consultation__inputs-field__label" for="email">Email</label>
                 </div>
 
-                <button class="consultation__inputs-btn">Связаться с нами</button>
+                <button class="consultation__inputs-btn btn-purple">Связаться с нами</button>
             </form>
 
             <label class="consultation__check">

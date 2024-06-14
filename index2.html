@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СборИдей</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header wrapper">
+        <a href="/">
+            <img class="header__logo" src="./assets/logo.svg" alt="logo.svg">
+        </a>
+
+        <div class="header__menu">
+            <a href="#" class="header__menu-item">Преимущества</a>
+            <a href="#" class="header__menu-item">Кейсы</a>
+            <a href="#" class="header__menu-item">Для клиента</a>
+            <a href="#" class="header__menu-item">Для респондента</a>
+        </div>
+
+        <div class="header__btns">
+            <button class="header__btns-btn">Войти</button>
+            <button class="header__btns-btn header__btns-btn--style">Создать демо-опрос</button>
+        </div>
+
+        <div class="header__open" onclick="changeHeaderShow()"><img src="./assets/menu.svg" alt="menu.svg"></div>
+
+        <div class="header--mobile">
+            <div class="header__close" onclick="changeHeaderShow()"><img src="./assets/close.svg" alt="close.svg"></div>
+
+            <div class="header__menu">
+                <a href="#" class="header__menu-item">Преимущества</a>
+                <a href="#" class="header__menu-item">Кейсы</a>
+                <a href="#" class="header__menu-item">Для клиента</a>
+                <a href="#" class="header__menu-item">Для респондента</a>
+            </div>
+    
+            <div class="header__btns">
+                <button class="header__btns-btn">Войти</button>
+                <button class="header__btns-btn header__btns-btn--style">Создать демо-опрос</button>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function changeHeaderShow() {
+            let classEl = document.querySelector('.header--mobile').classList
+
+            if(document.querySelector('.header--mobile-show')) {
+                classEl.remove('header--mobile-show')
+            } else {
+                classEl.add('header--mobile-show')
+            }
+        }
+    </script>
+
+    <main>
+        <section class="first wrapper">
+            <div class="first__content">
+                <h2 class="first__content-title">Заполняйте опросы и получайте бонусы</h2>
+
+                <p class="first__content-text">Ваше мнение помогает брендам понять, что вы думаете о них!</p>
+            </div>
+
+            <div class="first__grid">
+                <div class="first__grid-item first__grid-item--1">
+                    <p class="first__grid-item-title">100+</p>
+                    <p class="first__grid-item-text">Проверенных заказчиков</p>
+
+                    <div class="first__grid-item-line"></div>
+
+                    <div class="first__grid-item-corner first__grid-item-corner--bottom">
+                        <img class="first__grid-item-corner-img first__grid-item-corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                        <img class="first__grid-item-corner-img first__grid-item-corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                    </div>
+                </div>
+
+                <div class="first__grid-item first__grid-item--2">
+                    <button>Начать</button>
+                </div>
+
+                <div class="first__grid-item first__grid-item--3">
+                    <p>Большой выбор заданий</p>
+
+                    <div class="first__grid-item-corner first__grid-item-corner--top">
+                        <img class="first__grid-item-corner-img first__grid-item-corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                        <img class="first__grid-item-corner-img first__grid-item-corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                    </div>
+                </div>
+
+                <div class="first__grid-item first__grid-item--4">
+                    <img src="./assets/first.jpg" alt="first.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="why wrapper">
+            <h2 class="why__title">Почему сбор идей?</h2>
+
+            <div class="why__items">
+                <div class="why__items-item">
+                    <img class="why__items-item-img" src="./assets/why-1.svg" alt="why-1.svg">
+
+                    <p class="why__items-item-title">Сохранность ваших данных</p>
+
+                    <p class="why__items-item-text">
+                        Мы не храним и не передаем ваши данные третьим лицам в соответствии с политикой конфиденциальности.Ваши ответы абсолютно анонимны.
+                    </p>
+                </div>
+
+                <div class="why__items-item">
+                    <img class="why__items-item-img" src="./assets/why-2.svg" alt="why-2.svg">
+
+                    <p class="why__items-item-title">Проверенные заказчики</p>
+
+                    <p class="why__items-item-text">
+                        Мы работаем только с надежными заказчиками и тщательно отбираем опросы. Все анкеты проходят проверку в несколько этапов, чтобы вопросы в них были понятными.
+                    </p>
+                </div>
+
+                <div class="why__items-item">
+                    <img class="why__items-item-img" src="./assets/why-3.svg" alt="why-3.svg">
+
+                    <p class="why__items-item-title">Постоянная поддержка</p>
+
+                    <p class="why__items-item-text">
+                        Наши менеджеры будут сопровождать вас на каждом шагу, ответят на все интересующие вопросы. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="participate wrapper">
+            <div class="participate__img">
+                <img class="participate__img-img" src="./assets/participate.jpg" alt="participate.jpg">
+
+                <div class="participate__img-corner participate__img-corner--bottom">
+                    <button class="participate__img-corner-btn btn-purple">Зарегистрироваться</button>
+
+                    <img class="participate__img-corner-img participate__img-corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                    <img class="participate__img-corner-img participate__img-corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                </div>
+            </div>
+
+            <div class="participate__content">
+                <h2 class="participate__content-title">Участвуйте в проекте</h2>
+
+                <p class="participate__content-text">
+                    После регистрации вы будете получать приглашенияна электронную почту или cможете подобрать опросв личном кабинете.<br/><br/>
+
+                    Проходя опросы, вы влияете на качество товарови услуг таких компаний, как Avito, Samsung, Ozonи другие. В результате бренды создают продуктыcогласно вашим пожеланиям.
+                </p>
+            </div>
+        </section>
+
+        <section class="functionality-purple wrapper">
+            <div class="functionality-purple__text">
+                <h2 class="functionality-purple__text-title">Функциональность</h2>
+
+                <p class="functionality-purple__text-text">В конструкторе анкет “Сбор Идей” мы собрали самый востребованный функционал под Ваши потребности:</p>
+            </div>
+
+            <div class="functionality-purple__items">
+                <div class="functionality-purple__items-item">
+                    <img class="functionality-purple__items-item-img" src="./assets/functionality-purple-1.svg" alt="functionality-purple-1.svg">
+
+                    <p class="functionality-purple__items-item-text">
+                        Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.
+                    </p>
+                </div>
+
+                <div class="functionality-purple__items-item">
+                    <img class="functionality-purple__items-item-img" src="./assets/functionality-purple-2.svg" alt="functionality-purple-2.svg">
+
+                    <p class="functionality-purple__items-item-text">
+                        Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.
+                    </p>
+                </div>
+
+                <div class="functionality-purple__items-item">
+                    <img class="functionality-purple__items-item-img" src="./assets/functionality-purple-3.svg" alt="functionality-purple-3.svg">
+
+                    <p class="functionality-purple__items-item-text">
+                        Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.
+                    </p>
+                </div>
+
+                <div class="functionality-purple__items-item">
+                    <img class="functionality-purple__items-item-img" src="./assets/functionality-purple-4.svg" alt="functionality-purple-4.svg">
+
+                    <p class="functionality-purple__items-item-text">
+                        Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="participate participate--revert wrapper">
+            <div class="participate__content">
+                <h2 class="participate__content-title">Участвуйте в проекте</h2>
+
+                <p class="participate__content-text">
+                    После регистрации вы будете получать приглашенияна электронную почту или cможете подобрать опросв личном кабинете.<br/><br/>
+
+                    Проходя опросы, вы влияете на качество товарови услуг таких компаний, как Avito, Samsung, Ozonи другие. В результате бренды создают продуктыcогласно вашим пожеланиям.
+                </p>
+            </div>
+
+            <div class="participate__img">
+                <img class="participate__img-img" src="./assets/participate-2.jpg" alt="participate-2.jpg">
+
+                <div class="participate__img-corner participate__img-corner--bottom">
+                    <button class="participate__img-corner-btn btn-purple">Зарегистрироваться</button>
+
+                    <img class="participate__img-corner-img participate__img-corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                    <img class="participate__img-corner-img participate__img-corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                </div>
+            </div>
+        </section>
+
+        <section class="adaptability wrapper">
+            <img class="adaptability__img" src="./assets/adaptability.png" alt="adaptability.png">
+
+            <div class="adaptability__content">
+                <h2 class="adaptability__content-title">Взаимодействие
+                    с любого устройства</h2>
+
+                <p class="adaptability__content-text">
+                    Сбор Идей – это возможность доступа с разных устройств и программного обеспечения.<br/><br/>
+                    
+                    Не волнуйтесь о типе устройства и ПО респондента, менеджера или редактора, так как наши анкеты, конструктор, результаты корректно отображаются на любом устройстве
+                </p>
+            </div>
+        </section>
+
+        <section class="advantages advantages--gap-3 wrapper">
+            <div class="advantages__items">
+                <div class="advantages__items-item">
+                    <img class="advantages__items-item-img" src="./assets/advantages-5.svg" alt="advantages-5.svg">
+
+                    <p class="advantages__items-item-title">Взаимодействие с менеджером</p>
+
+                    <p class="advantages__items-item-text">Наш конструктор не требует особых знаний и навыков программирования</p>
+                </div>
+
+                <div class="advantages__items-item">
+                    <img class="advantages__items-item-img" src="./assets/advantages-6.svg" alt="advantages-6.svg">
+
+                    <p class="advantages__items-item-title">Легкий процесс</p>
+
+                    <p class="advantages__items-item-text">Бесплатное сопровождение менеджера (инструкции, презентация функционала, помощь, ответы на вопросы). Заведение опроса «Под ключ» силами нашего менеджера
+                    </p>
+                </div>
+
+                <div class="advantages__items-item">
+                    <img class="advantages__items-item-img" src="./assets/advantages-7.svg" alt="advantages-7.svg">
+
+                    <p class="advantages__items-item-title">Быстрая оплата</p>
+
+                    <p class="advantages__items-item-text">Легко меняйте обложки, добавляйте фирменные изображения и элементы айдентики</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comfort wrapper">
+            <div class="comfort__left">
+                <h2 class="comfort__left-title">Мы готовы обеспечить комфортное сотрудничество</h2>
+
+                <p class="comfort__left-text">
+                    Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.
+                </p>
+            </div>
+
+            <div class="comfort__right">
+                <div class="comfort__right-item">
+                    <p class="comfort__right-item-text">Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.</p>
+                </div>
+
+                <div class="comfort__right-item">
+                    <p class="comfort__right-item-text">Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.</p>
+                </div>
+
+                <div class="comfort__right-item">
+                    <p class="comfort__right-item-text">Сложно сказать, почему сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и указаны как претенденты на роль ключевых факторов. Предварительные выводы неутешительны: перспективное планирование является качественно новой ступенью вывода текущих активов.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flexibility flexibility--center wrapper">
+            <img class="flexibility__img" src="./assets/flexibility-girl.png" alt="flexibility-girl.png">
+
+            <div class="flexibility__content">
+                <p class="flexibility__content-text">Разработка уникального функционала силами собственной команды разработчиков:</p>
+
+                <ul class="flexibility__content-list">
+                    <li class="flexibility__content-list-item">возможность интеграции с системами Заказчика</li>
+                    <li class="flexibility__content-list-item">персонализированная логика анкеты и пути респондента</li>
+                    <li class="flexibility__content-list-item">создание механизмов анкеты под запрос клиента (MaxDiff , Click-test (зональные, координатные) и др.</li>
+                    <li class="flexibility__content-list-item">квотирование ЦА опроса</li>
+                </ul>
+            </div>
+
+            <div class="flexibility__corner">
+                <button class="flexibility__corner-btn btn-purple">
+                    Попробовать демо
+
+                    <img src="./assets/arrow.svg" alt="arrow.svg">
+                </button>
+
+                <img class="flexibility__corner-img flexibility__corner-img--left" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+                <img class="flexibility__corner-img flexibility__corner-img--right" src="./assets/corner--gray.svg" alt="corner--gray.svg">
+            </div>
+        </section>
+
+        <section class="reviews wrapper">
+            <h2 class="reviews__title">Отзывы участников</h2>
+
+            <div class="reviews-btn reviews-btn-prev">
+                <img class="reviews-btn-prev__arrow" src="./assets/arrow-slider.svg" alt="arrow-slider.svg">
+            </div>
+
+            <div class="reviews-btn reviews-btn-next">
+                <img class="reviews-btn-next__arrow" src="./assets/arrow-slider.svg" alt="arrow-slider.svg">
+            </div>
+
+            <div 
+                id="reviews" 
+                class="DTScroll reviews-slider reviews-slider--0"
+                points='{"0":2, "768": 1}'
+                direction="horizontal"
+                anchor="true"
+            >
+                <div class="reviews-line">
+                    <div class="reviews-item">
+                        <div class="reviews-item__user">
+                            <div class="reviews-item__user-img">
+                                <img src="./assets/reviews.png" alt="reviews.png">
+                            </div>
+
+                            <p class="reviews-item__user-name">Анна</p>
+                        </div>
+
+                        <p class="reviews-item__text">
+                            Самый лучший опросник. Все опросы интересные и разнообразные. Тех. поддрежка работает оперативно. Ни одно из моих сообщений не было проигнарировано.
+                        </p>
+                    </div>
+
+                    <div class="reviews-item">
+                        <div class="reviews-item__user">
+                            <div class="reviews-item__user-img">
+                                <img src="./assets/reviews.png" alt="reviews.png">
+                            </div>
+
+                            <p class="reviews-item__user-name">Анна</p>
+                        </div>
+
+                        <p class="reviews-item__text">
+                            Самый лучший опросник. Все опросы интересные и разнообразные. Тех. поддрежка работает оперативно. Ни одно из моих сообщений не было проигнарировано.
+                        </p>
+                    </div>
+
+                    <div class="reviews-item">
+                        <div class="reviews-item__user">
+                            <div class="reviews-item__user-img">
+                                <img src="./assets/reviews.png" alt="reviews.png">
+                            </div>
+
+                            <p class="reviews-item__user-name">Анна</p>
+                        </div>
+
+                        <p class="reviews-item__text">
+                            Самый лучший опросник. Все опросы интересные и разнообразные. Тех. поддрежка работает оперативно. Ни одно из моих сообщений не было проигнарировано.
+                        </p>
+                    </div>
+
+                    <div class="reviews-item">
+                        <div class="reviews-item__user">
+                            <div class="reviews-item__user-img">
+                                <img src="./assets/reviews.png" alt="reviews.png">
+                            </div>
+
+                            <p class="reviews-item__user-name">Анна</p>
+                        </div>
+
+                        <p class="reviews-item__text">
+                            Самый лучший опросник. Все опросы интересные и разнообразные. Тех. поддрежка работает оперативно. Ни одно из моих сообщений не было проигнарировано.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="answers wrapper">
+            <div class="answers__text">
+                <h2 class="answers__text-title">Вопросы и ответы</h2>
+
+                <p class="answers__text-text">Ответы на самые частозадаваемые вопросы. Есливы не нашли ответ, свяжитесь с нашей тех.поддержкой.</p>
+
+                <button class="answers__text-btn btn-purple">Зарегистрироваться</button>
+            </div>
+
+            <div class="answers__items">
+                <div class="answers__items-item answers__items-item--active" onclick="changeShowAnswers(0)">
+                    <div class="answers__items-item-header">
+                        <p class="answers__items-item-header-title">Как проходить опросы?</p>
+
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--minus" src="./assets/answers-minus.svg" alt="answers-minus.svg">
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--plus" src="./assets/answers-plus.svg" alt="answers-plus.svg">
+                    </div>
+
+                    <p class="answers__items-item-text">
+                        Digital marketing allows businesses to reach and engage with a wider audience, generate leads, drive website traffic, and increase brand visibility. It provides measurable results, allows for targeted marketing efforts, and enables businesses to adapt and optimize their strategies based on data and insights.
+                    </p>
+                </div>
+
+                <div class="answers__items-item" onclick="changeShowAnswers(1)">
+                    <div class="answers__items-item-header">
+                        <p class="answers__items-item-header-title">Как зарегистрироваться на сайте</p>
+
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--minus" src="./assets/answers-minus.svg" alt="answers-minus.svg">
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--plus" src="./assets/answers-plus.svg" alt="answers-plus.svg">
+                    </div>
+
+                    <p class="answers__items-item-text">
+                        Digital marketing allows businesses to reach and engage with a wider audience, generate leads, drive website traffic, and increase brand visibility. It provides measurable results, allows for targeted marketing efforts, and enables businesses to adapt and optimize their strategies based on data and insights.
+                    </p>
+                </div>
+
+                <div class="answers__items-item" onclick="changeShowAnswers(2)">
+                    <div class="answers__items-item-header">
+                        <p class="answers__items-item-header-title">Сколько опросов мне необходимо делать</p>
+
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--minus" src="./assets/answers-minus.svg" alt="answers-minus.svg">
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--plus" src="./assets/answers-plus.svg" alt="answers-plus.svg">
+                    </div>
+
+                    <p class="answers__items-item-text">
+                        Digital marketing allows businesses to reach and engage with a wider audience, generate leads, drive website traffic, and increase brand visibility. It provides measurable results, allows for targeted marketing efforts, and enables businesses to adapt and optimize their strategies based on data and insights.
+                    </p>
+                </div>
+
+                <div class="answers__items-item answers__items-item--last" onclick="changeShowAnswers(3)">
+                    <div class="answers__items-item-header">
+                        <p class="answers__items-item-header-title">Какая оплата за опросы</p>
+
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--minus" src="./assets/answers-minus.svg" alt="answers-minus.svg">
+                        <img class="answers__items-item-header-svg answers__items-item-header-svg--plus" src="./assets/answers-plus.svg" alt="answers-plus.svg">
+                    </div>
+
+                    <p class="answers__items-item-text">
+                        Digital marketing allows businesses to reach and engage with a wider audience, generate leads, drive website traffic, and increase brand visibility. It provides measurable results, allows for targeted marketing efforts, and enables businesses to adapt and optimize their strategies based on data and insights.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function changeShowAnswers(count) {
+                document.querySelector('.answers__items-item--active').classList.remove('answers__items-item--active')
+                document.querySelectorAll('.answers__items-item')[count].classList.add('answers__items-item--active')
+            }
+        </script>
+
+        <section class="consultation wrapper">
+            <h2 class="consultation__title">Консультация</h2>
+
+            <p class="consultation__text">Оставьте контактные данные и мы свяжемся с вами в ближайшее время, чтобы ответить на все вопросы.</p>
+
+            <form class="consultation__inputs">
+                <div class="consultation__inputs-field consultation__inputs-field-floating">
+                    <input class="consultation__inputs-field__input" type="text" id="name" placeholder="name" required>
+                    <label class="consultation__inputs-field__label" for="name">ФИО*</label>
+                </div>
+
+                <div class="consultation__inputs-field consultation__inputs-field-floating">
+                    <input class="consultation__inputs-field__input" type="text" id="tell" placeholder="tell" required>
+                    <label class="consultation__inputs-field__label" for="tell">Телефон*</label>
+                </div>
+
+                <div class="consultation__inputs-field consultation__inputs-field-floating">
+                    <input class="consultation__inputs-field__input" type="email" id="email" placeholder="email">
+                    <label class="consultation__inputs-field__label" for="email">Email</label>
+                </div>
+
+                <button class="consultation__inputs-btn btn-purple">Связаться с нами</button>
+            </form>
+
+            <label class="consultation__check">
+                <input class="consultation__check-input" type="checkbox"> Используя сайт, Вы соглашаетесь с условиями сайта и на обработку <a href="#">персональных данных</a>.
+            </label>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container wrapper">
+            <img class="footer__logo" src="./assets/logo-white.svg" alt="logo-white.svg">
+
+            <div class="footer__menu">
+                <a class="footer__menu-link" href="#">Преимущества</a>
+                <a class="footer__menu-link" href="#">Кейсы</a>
+                <a class="footer__menu-link" href="#">Для клиента</a>
+                <a class="footer__menu-link" href="#">Для респондента</a>
+                <a class="footer__menu-link" href="mailto:info@servizoria.ru">info@servizoria.ru</a>
+                <a class="footer__menu-link" href="mailto:sales@servizoria.ru">sales@servizoria.ru</a>
+            </div>
+
+            <a class="footer__tell" href="tel:+74952680244">
+                <img src="./assets/phone.svg" alt="phone.svg">
+                +7 (495) 268-02-44
+            </a>
+        </div>
+    </footer>
+
+    <script src="./DTScroll.min.js"></script>
+</body>
+</html>
